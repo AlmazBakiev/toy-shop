@@ -18,6 +18,7 @@ public class WriteToFile {
     }
 
     public void writeToFileClose() {
+        if (writer == null) return;
         try {
             writer.close();
         } catch (IOException e) {
